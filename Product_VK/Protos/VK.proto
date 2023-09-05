@@ -1,0 +1,78 @@
+syntax = "proto3";
+
+option csharp_namespace = "Product_VK.Protos";
+
+
+service VKProtoService {
+	rpc GetVK(GetVKRequest) returns (VKModel);
+	rpc GetAllVK(GetAllVKRequest) returns (stream VKModel);
+
+	rpc AddVK (AddVKRequest) returns (AddResponse);
+	rpc UpdateVK (UpdateVKRequest) returns (VKModel);
+	rpc DeleteVK (DeleteVKRequest) returns	(DeleteVKResponse);
+
+	rpc InsertBulkVK (stream VKModel) returns (InsertBulkVKResponse);
+
+	rpc GetVK_Test(GetVKRequest) returns (Getstatus) ;
+
+}
+
+message AddVKRequest{
+	VKModel VK = 1;
+}
+
+message UpdateVKRequest{
+	VKModel VK = 1;
+}
+
+message DeleteVKRequest{
+	int32 ID_VK = 1;
+}
+
+
+
+
+
+message GetVKRequest{
+	int32 ID_VK = 1;
+}
+
+message GetAllVKRequest{
+
+}
+
+message VKModel {
+	int32 VK_ID = 1;
+	string Name_VK = 2;
+	string Name_Other = 3;
+	string Description_VK = 4;
+	string Accessories_VK = 5;
+	string Image_VK = 6;
+	string Note_VK = 7;
+	int32 ID_Group_VK = 8;
+	double Weight_VK = 9;
+	double Width_VK = 10;
+	double Height_VK = 11;
+	double Depth_VK = 12;
+	double Range_operation = 13;
+
+
+}
+
+message  Getstatus {
+	bool success = 1;
+
+}
+
+message DeleteVKResponse {
+	bool success = 1;
+}
+
+message InsertBulkVKResponse {
+	bool success = 1;
+	int32 insertCount = 2;
+}
+
+message AddResponse{
+	bool success = 1;
+}

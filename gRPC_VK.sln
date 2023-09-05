@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product_VK", "Product_VK\Product_VK.csproj", "{999FD7BA-E8DD-4973-AB7E-965CF4C7F01C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKgrpcCLient", "VKgrpcCLient\VKgrpcCLient.csproj", "{F4DD5C67-CE76-40FB-8E05-571962C78A68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{999FD7BA-E8DD-4973-AB7E-965CF4C7F01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{999FD7BA-E8DD-4973-AB7E-965CF4C7F01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{999FD7BA-E8DD-4973-AB7E-965CF4C7F01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{999FD7BA-E8DD-4973-AB7E-965CF4C7F01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DD5C67-CE76-40FB-8E05-571962C78A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DD5C67-CE76-40FB-8E05-571962C78A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DD5C67-CE76-40FB-8E05-571962C78A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DD5C67-CE76-40FB-8E05-571962C78A68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {457DB5DA-0978-4716-89CF-DB2BB89E34B6}
+	EndGlobalSection
+EndGlobal
